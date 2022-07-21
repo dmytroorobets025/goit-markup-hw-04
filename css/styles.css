@@ -1,0 +1,492 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --color-white: #ffffff;
+  --primary-section-fon: #2f303a;
+
+  /* decoration */
+  --decoration-work-list: #eeeeee;
+  --decoration-background: #f5f4fa;
+  --decoration-buttons-2: #a9a9ad;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ШАПКА */
+
+.page-header {
+  background-color: var(--color-white);
+  border-bottom: 1px solid #ececec;
+
+  padding: 24px 0;
+}
+
+.head-box {
+  display: flex;
+  align-items: center;
+}
+
+.head-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo-left {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo {
+  color: #000000;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav {
+  margin-left: 93px;
+  display: flex;
+}
+
+.site-nav .nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav :focus {
+  background-color: var(--color-white);
+  color: var(--accent-color);
+}
+
+.site-nav :hover {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.auth-nav :focus {
+  background-color: var(--color-white);
+  color: var(--accent-color);
+}
+
+.auth-nav :hover {
+  color: var(--accent-color);
+}
+
+.auth-nav .nav-item + .nav-item {
+  margin-left: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* Добавляє заголовкам стиль */
+
+h1,
+h2,
+h3 {
+  color: var(--title-text-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Секція 1 */
+
+.section-hero {
+  background: var(--primary-section-fon);
+
+  text-align: center;
+
+  padding: 200px 0;
+}
+
+.img-bgr-hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgr-hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-txt {
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--color-white);
+  font-family: Roboto, sans-serif;
+  max-width: 600px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-button {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px 32px;
+
+  background-color: var(--accent-color);
+  color: var(--color-white);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+}
+
+/* Секція 2 */
+
+.section {
+  padding: 94px 0;
+  background: var(--color-white);
+}
+
+.about {
+  padding-bottom: 0;
+}
+
+.about-us-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.content-box {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-box::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 30px;
+  height: 120px;
+  background: var(--decoration-background);
+  border-radius: 4px;
+}
+
+.icon-details::before {
+  background-image: url(../images/about-us.icon/details.svg);
+}
+
+.icon-punctuality::before {
+  background-image: url(../images/about-us.icon/punctuality.svg);
+}
+
+.icon-planning::before {
+  background-image: url(../images/about-us.icon/planning.svg);
+}
+
+.icon-technology::before {
+  background-image: url(../images/about-us.icon/technology.svg);
+}
+
+.about-us {
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.about-us-txt {
+  margin-top: 10px;
+
+  line-height: 1.7;
+}
+
+/* Секція 3 */
+
+.title-images {
+  margin-top: 50px;
+
+  display: flex;
+}
+
+.image {
+  max-width: 370px;
+  max-height: 294px;
+  margin-right: 30px;
+}
+
+.image-last {
+  max-width: 370px;
+  max-height: 294px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Секція 4 "Team" */
+
+.section-team {
+  padding: 94px 0;
+
+  background-color: #f5f4fa;
+}
+
+.team-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  margin-top: 50px;
+}
+
+.team-element {
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.workers {
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.profession {
+  margin-top: 10px;
+  padding-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* Підвал */
+
+.footer {
+  padding: 60px 0;
+
+  background: var(--primary-section-fon);
+}
+
+.logo-footer {
+  color: var(--color-white);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer-contact :not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.footer-address {
+  margin-top: 20px;
+}
+
+.address-item .address-sity {
+  display: flex;
+  align-items: center;
+}
+
+.address-sity {
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.contacts {
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-studio :hover,
+:focus {
+  background-color: var(--primary-section-fon);
+  color: var(--accent-color);
+}
+
+/* Прибирає список з "li" */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Скриті заголовки */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* PAGE #-2 */
+
+.section-portfolio {
+  padding: 94px 0;
+}
+
+.buttons {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.list-of-buttons {
+  padding: 6px 22px;
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  cursor: pointer;
+}
+
+.bgr-of-buttons :hover {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.buttons :focus {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.buttons .current {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.titles-of-works {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.paragraphs-of-works {
+  margin-top: 4px;
+
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primary-text-color);
+}
+
+.work-list {
+  width: 1200px;
+  padding: 0 15px;
+}
+
+.work-list-pozition {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.work-elements {
+  width: 370px;
+  margin: 15px;
+}
+
+.decoration-work-lilt {
+  border-left: 1px solid var(--decoration-work-list);
+  border-right: 1px solid var(--decoration-work-list);
+  border-bottom: 1px solid var(--decoration-work-list);
+
+  padding: 20px 24px;
+}
+
+.test-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 270px;
+  padding-bottom: 30px;
+}
+
+/* background-repeat: no-repeat; */
+/* background-position: center; */
+/* background-size: cover; */
