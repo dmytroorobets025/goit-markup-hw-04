@@ -37,7 +37,7 @@ body {
   background-color: var(--color-white);
   border-bottom: 1px solid #ececec;
 
-  padding: 24px 0;
+  padding: 0;
 }
 
 .head-box {
@@ -73,6 +73,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .site-nav {
@@ -121,6 +124,27 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: inline-flex;
+
+  padding: 32px 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item svg {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.envelope {
+  fill: currentColor;
+}
+
+.smartphone {
+  fill: currentColor;
 }
 
 /* Добавляє заголовкам стиль */
@@ -231,19 +255,19 @@ button {
 }
 
 .icon-details::before {
-  background-image: url(../images/about-us.icon/details.svg);
+  background-image: url(../images/icon.svg/details.svg);
 }
 
 .icon-punctuality::before {
-  background-image: url(../images/about-us.icon/punctuality.svg);
+  background-image: url(../images/icon.svg/punctuality.svg);
 }
 
 .icon-planning::before {
-  background-image: url(../images/about-us.icon/planning.svg);
+  background-image: url(../images/icon.svg/planning.svg);
 }
 
 .icon-technology::before {
-  background-image: url(../images/about-us.icon/technology.svg);
+  background-image: url(../images/icon.svg/technology.svg);
 }
 
 .about-us {
@@ -481,7 +505,7 @@ ul {
 .test-div {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 34px;
   justify-content: center;
   max-width: 270px;
   padding-bottom: 30px;
