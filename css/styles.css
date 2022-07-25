@@ -249,13 +249,14 @@ button {
   background-position: center;
   background-size: contain;
   margin-bottom: 30px;
+  width: 270px;
   height: 120px;
   background: var(--decoration-background);
   border-radius: 4px;
 }
 
 .icon-details::before {
-  background-image: url(../images/icon.svg/details.svg);
+  background-image: url(../images/icon.svg/./details.svg);
 }
 
 .icon-punctuality::before {
@@ -342,10 +343,45 @@ button {
 
 .profession {
   margin-top: 10px;
-  padding-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.2;
+}
+
+.social-networks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  max-width: 270px;
+  padding-top: 16px;
+  padding-bottom: 30px;
+}
+
+.social-buttons {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.social-pozition {
+  margin: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.social-buttons:hover {
+  background-color: var(--accent-color);
+  fill: var(--color-white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.regular-customers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 /* Підвал */
@@ -397,6 +433,54 @@ button {
 :focus {
   background-color: var(--primary-section-fon);
   color: var(--accent-color);
+}
+
+.join-in {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-top: 12px;
+}
+
+.test2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+.social-networks-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.social-buttons-footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-pozition-footer {
+  margin: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.social-buttons-footer:hover {
+  background-color: var(--accent-color);
+  fill: var(--color-white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Прибирає список з "li" */
@@ -500,15 +584,6 @@ ul {
   border-bottom: 1px solid var(--decoration-work-list);
 
   padding: 20px 24px;
-}
-
-.test-div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 34px;
-  justify-content: center;
-  max-width: 270px;
-  padding-bottom: 30px;
 }
 
 /* background-repeat: no-repeat; */
