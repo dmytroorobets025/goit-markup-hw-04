@@ -178,7 +178,7 @@ button {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bgr-hero.jpg);
+    url(../images/studio.img/bgr-hero.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -219,6 +219,13 @@ button {
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0;
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
@@ -499,20 +506,24 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color-white);
-  margin-top: 12px;
 }
 
-.test2 {
+.footer-box {
   display: flex;
-  flex-wrap: wrap;
-  gap: 70px;
+  align-items: baseline;
+  /* flex-wrap: wrap;
+  gap: 70px; */
   /* align-items: baseline; */
 }
 
-/* .test54 {
+/* .footer-box {
   display: flex;
   flex-direction: column;
 } */
+
+.footef-addres-box {
+  margin-right: 70px;
+}
 
 .social-networks-footer {
   display: flex;
@@ -575,6 +586,7 @@ ul {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -594,12 +606,17 @@ ul {
   cursor: pointer;
 }
 
-.bgr-of-buttons :hover {
+.list-of-buttons:hover,
+.list-of-buttons:focus {
   background-color: var(--accent-color);
   color: var(--color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
-.buttons :focus {
+.buttons:focus,
+.buttons:focus:hover {
   background-color: var(--accent-color);
   color: var(--color-white);
 }
@@ -607,6 +624,13 @@ ul {
 .buttons .current {
   background-color: var(--accent-color);
   color: var(--color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.img-paddings {
+  display: block;
 }
 
 .titles-of-works {
@@ -638,6 +662,12 @@ ul {
 .work-elements {
   width: 370px;
   margin: 15px;
+}
+
+.work-elements:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .decoration-work-lilt {
