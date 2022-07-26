@@ -68,6 +68,10 @@ body {
   text-decoration: none;
 }
 
+.logo:focus {
+  background-color: var(--color-white);
+}
+
 .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -101,15 +105,6 @@ body {
   color: var(--accent-color);
 }
 
-.auth-nav :focus {
-  background-color: var(--color-white);
-  color: var(--accent-color);
-}
-
-.auth-nav :hover {
-  color: var(--accent-color);
-}
-
 .auth-nav .nav-item + .nav-item {
   margin-left: 50px;
 }
@@ -120,6 +115,9 @@ body {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -130,9 +128,19 @@ body {
   padding: 32px 0;
 }
 
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
 .nav-item {
   display: flex;
   align-items: center;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+  color: var(--accent-color);
 }
 
 .envelope {
@@ -403,6 +411,12 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.social-buttons:focus {
+  background-color: var(--accent-color);
+  fill: var(--color-white);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .regular-customers {
   display: flex;
   /* flex-wrap: wrap;
@@ -426,24 +440,30 @@ button {
   justify-content: center;
   width: 100%;
   height: 100%;
+  /* border-radius: 50%; */
   border: 1px solid var(--decoration-color-customers);
   border-radius: 4px;
   color: var(--decoration-color-customers);
+  /* background-color: var(--color-white); */
+}
+
+.company-hover:hover,
+.company-hover:focus {
+  cursor: pointer;
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 4px;
 }
 
 .color-customers {
   fill: currentColor;
 }
 
-.company-hover:hover,
-:focus {
+.color-customers:hover {
   fill: var(--accent-color);
-  color: var(--accent-color);
-  border-color: var(--accent-color);
 }
 
-.color-customers:hover,
-:focus {
+.color-customers:focus {
   fill: var(--accent-color);
 }
 
@@ -492,10 +512,13 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-studio :hover,
-:focus {
+.contacts-studio:hover {
   background-color: var(--primary-section-fon);
   color: var(--accent-color);
+}
+
+.contacts-studio:focus {
+  border-color: var(--accent-color);
 }
 
 .join-in {
@@ -554,6 +577,12 @@ button {
   background-color: var(--accent-color);
   fill: var(--color-white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.social-buttons-footer:focus {
+  background-color: var(--accent-color);
+  fill: var(--color-white);
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
 }
 
 /* Прибирає список з "li" */
@@ -681,3 +710,7 @@ ul {
 /* background-repeat: no-repeat; */
 /* background-position: center; */
 /* background-size: cover; */
+
+.social-pozition:focus {
+  color: var(--color-white);
+}
