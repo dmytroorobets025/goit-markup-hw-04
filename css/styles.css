@@ -175,13 +175,12 @@ button {
 
 .section-hero {
   background: var(--primary-section-fon);
-
-  text-align: center;
-
-  padding: 200px 0;
 }
 
 .img-bgr-hero {
+  padding: 200px 0;
+  text-align: center;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -190,7 +189,7 @@ button {
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .hero-txt {
@@ -512,13 +511,14 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-studio:hover {
+.contacts:hover {
   background-color: var(--primary-section-fon);
   color: var(--accent-color);
 }
 
-.contacts-studio:focus {
-  border-color: var(--accent-color);
+.contacts:focus {
+  background-color: var(--primary-section-fon);
+  color: var(--accent-color);
 }
 
 .join-in {
